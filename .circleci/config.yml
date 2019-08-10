@@ -27,7 +27,7 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: false
       - run:
-          name: Build and push Docker image
+          name: Build and push the Docker image
           command: |       
             pip install --user --no-cache-dir -r requirements.txt          
             ~/.local/bin/pyinstaller -F hello_world.py
